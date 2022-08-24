@@ -1,0 +1,47 @@
+img {
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: 100%, 100%;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img + p {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  border: 1px black solid;
+}
+
+header {
+  border: 1px black solid;
+  text-align: center;
+}
+
+h2 {
+  margin-left: 50px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin: 2rem;
+}
+
+article {
+  margin-inline: 10px;
+  border: 1px black solid;
+}
+
+/* metode 2, søskende */
+article:nth-child(2) {
+  background-color: orange;
+}
+article:nth-child(1) {
+  background-color: red;
+}
